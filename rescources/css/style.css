@@ -1,0 +1,152 @@
+/* Universal Styles */
+
+html {
+  font-size: 16px;
+}
+
+img{
+  width: 100%;
+}
+
+.main-content{
+  position: relative;
+  top: 4rem;
+  width: 100%;
+}
+
+.section {
+  padding: 2rem 1.5rem;
+}
+
+.section-content{
+  display: flex;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+header .logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  height: 2rem;
+}
+
+.header-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0rem 1.5rem;
+}
+
+header ul li{
+  display: inline;
+  margin-left: 1rem;
+}
+
+/* section1*/
+
+#section1.section{
+  background-color: lightgrey;
+}
+
+
+.column1 {
+  width: 60%;
+  padding-right: 1.5rem;
+}
+
+.column1 img {
+  width: 100%;
+}
+
+.column2 {
+  width: 40%;
+  margin: auto 0rem;
+}
+
+.column2 .button{
+  text-align: center;
+  background-color: grey;
+  padding: 0.5rem;
+  width: 50%;
+}
+
+/* section2*/
+
+.container{
+  display: flex;
+  padding: 1rem;
+  border-top: 1px solid lightgrey;
+}
+
+.container-image{
+  width: 35%;
+  margin-right: 1rem;
+}
+
+.container-text{
+  margin: auto 0rem;
+  width: 65%;
+}
+
+.column3{
+  width: 40%;
+}
+
+/* section3*/
+
+#section3.section{
+  background-color: lightgrey;
+  padding-bottom: 1rem;
+}
+
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content:center; /* Maintain equal spaceing using box-sizing and boarder*/
+}
+
+.grid-box{
+  width: 30%;
+  height:auto;
+  background-color: white;
+  border: 1rem solid lightgrey;
+  box-sizing: border-box;
+}
+
+.box-text{
+ max-width: 100%;
+ padding: 1rem;
+}
+
+/* section4 */
+
+.column1 video {
+  width: 100%;
+}
+
+/* Footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-top: 1px solid lightgrey;
+}
+
+.terms ul li{
+  display: inline;
+}
