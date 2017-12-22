@@ -32,6 +32,15 @@ html {
   font-size: 16px;
 }
 
+body {
+  font-family: "Crimson", serif;
+}
+
+button {
+  font-family: "Crimson", serif;
+  font-size: 1rem;
+}
+
 img{
   width: 100%;
 }
@@ -42,7 +51,6 @@ h1,h2,h3{
 }
 
 P{
-  font-family: "Crimson", serif;
   color: #373737;
   line-height: 1.2em;
 }
@@ -180,7 +188,7 @@ header ul li:hover:last-child a {
   margin: auto 0rem;
 }
 
-.button{
+button{
   text-align: center;
   background-color: #373737;
   padding: 0.5rem;
@@ -189,7 +197,7 @@ header ul li:hover:last-child a {
   color: white;
 }
 
-.button:hover{
+button:hover{
   background-color: #DCD0C0;
 }
 
