@@ -1,3 +1,31 @@
+/* Fonts */
+
+/* latin */
+@font-face {
+  font-family: 'Allerta';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Allerta Regular'), local('Allerta-Regular'), url(https://fonts.gstatic.com/s/allerta/v8/u8DhtLr8_kF32qKQjYheCwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Allerta';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Allerta Regular'), local('Allerta-Regular'), url(https://fonts.gstatic.com/s/allerta/v8/u8DhtLr8_kF32qKQjYheCwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url(https://fonts.gstatic.com/s/crimsontext/v8/3IFMwfRa07i-auYR-B-zNRampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
 /* Universal Styles */
 
 html {
@@ -8,9 +36,36 @@ img{
   width: 100%;
 }
 
+h1,h2,h3{
+  color: #c0b283;
+  font-family: Allerta;
+}
+
+P{
+  font-family: "Crimson", serif;
+  color: #373737;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 0rem;
+}
+
+h2{
+  font-size: 1.2rem;
+  padding: 1rem 0rem
+}
+
+h3 {
+  padding-bottom: 0.2rem;
+  font-size: 1.2rem;
+}
+
 .main-content{
-  position: relative;
-  top: 4rem;
+  /*position: relative;
+  top: 4rem;*/
   width: 100%;
 }
 
@@ -25,8 +80,8 @@ img{
 /* Header */
 
 header {
-  position: fixed;
-  z-index: 1;
+  /*position: fixed;
+  z-index: 1;*/
   width: 100%;
   height: 4rem;
   display: flex;
@@ -39,8 +94,23 @@ header .logo{
   align-items: center;
 }
 
-.logo img{
+.logo img {
   height: 2rem;
+}
+
+.logo {
+  font-style: Allerta;
+  color: #373737;
+}
+
+.logo.bold{
+  font-weight: bold;
+  padding-left: 0.1rem;
+  letter-spacing: 0.05rem;
+}
+
+.logo.thin {
+  letter-spacing: 0.05rem;
 }
 
 .header-content{
@@ -56,13 +126,46 @@ header ul li{
   margin-left: 1rem;
 }
 
-/* section1*/
+header a{
+  text-decoration: none;
+  font-family: "Crimson", Serif;
+  color: #373737;
+  padding-bottom: 0.2rem;
+}
 
-#section1.section{
-  background-color: lightgrey;
+header a:hover{
+  border-bottom: 1px solid #c0B283;
+}
+
+header ul li:nth-last-child(2) {
+    font-style: italic;
+}
+
+header ul li:last-child a {
+  background-color: #373737;
+  padding: 0.4rem 0.5rem;
+  color: white;
+  border: none;
+}
+
+header ul li:hover:last-child a {
+  background-color: #DCD0C0;
+  padding: 0.4rem 0.5rem;
+  color: white;
+  border: none;
 }
 
 
+
+/* section1*/
+
+#section1.section{
+  background-color: #F4F4F4;
+}
+
+#section1 p{
+  font-size: 1.5rem;
+}
 .column1 {
   width: 60%;
   padding-right: 1.5rem;
@@ -77,11 +180,17 @@ header ul li{
   margin: auto 0rem;
 }
 
-.column2 .button{
+.button{
   text-align: center;
-  background-color: grey;
+  background-color: #373737;
   padding: 0.5rem;
   width: 50%;
+  margin-top: 2rem;
+  color: white;
+}
+
+.button:hover{
+  background-color: #DCD0C0;
 }
 
 /* section2*/
@@ -90,6 +199,10 @@ header ul li{
   display: flex;
   padding: 1rem;
   border-top: 1px solid lightgrey;
+}
+
+.container:hover {
+  background-color: #f4f4f4;
 }
 
 .container-image{
@@ -106,10 +219,28 @@ header ul li{
   width: 40%;
 }
 
+.column1 a,.column3 a{
+  text-decoration: none;
+  font-style: italic;
+  color: #DCD0C0;
+  padding-top: 0.2rem;
+}
+
+.column1 a:hover,.column3 a:hover{
+  color: #C0B283;
+}
 /* section3*/
 
 #section3.section{
-  background-color: lightgrey;
+  background-color: #F4F4F4;
+  padding-bottom: 1rem;
+}
+
+#section3 h1{
+  text-align: center;
+}
+
+#section3 h3{
   padding-bottom: 1rem;
 }
 
@@ -124,7 +255,7 @@ header ul li{
   width: 30%;
   height:auto;
   background-color: white;
-  border: 1rem solid lightgrey;
+  border: 1rem solid #F4F4F4;
   box-sizing: border-box;
 }
 
@@ -133,10 +264,21 @@ header ul li{
  padding: 1rem;
 }
 
+.box-text span{
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #dcd0c0;
+}
+
 /* section4 */
 
 .column1 video {
   width: 100%;
+}
+
+#section4 h1{
+  text-align: center;
+  padding-bottom: 2rem;
 }
 
 /* Footer */
@@ -144,9 +286,25 @@ footer{
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid #f4f4f4;
+  background-color: #dcd0c0;
+}
+
+.copywright{
+  color: white;
 }
 
 .terms ul li{
   display: inline;
+  margin-left: 1rem;
+}
+
+.terms a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 0.2rem;
+}
+
+.terms a:hover{
+    border-bottom: 1px solid white;
 }
