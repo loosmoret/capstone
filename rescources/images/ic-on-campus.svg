@@ -4,6 +4,11 @@
     <title>ic_onCampus</title>
     <desc>Created with Sketch.</desc>
     <defs>
+      <style type="text/css"><![CDATA[
+    g {
+      fill: #373737;
+    }
+  ]]></style>
         <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
             <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>

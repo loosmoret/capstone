@@ -83,6 +83,7 @@ h3 {
 
 .section-content{
   display: flex;
+  width: 100%;
 }
 
 /* Header */
@@ -163,6 +164,61 @@ header ul li:hover:last-child a {
   border: none;
 }
 
+.mobile {
+  display: none;
+}
+
+/* header mobile*/
+
+@media only screen and (max-width: 650px){
+
+.desktop {
+  display: none;
+}
+
+header .logo {
+  display: none;
+}
+
+.mobile {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+header a {
+  padding-bottom: 0rem;
+}
+
+.mobile a:hover{
+  border: none;
+}
+
+.mobile svg g{
+  fill: #373737;
+}
+
+a:hover > svg g {
+  fill: #DCD0C0;
+}
+
+
+/*a.svg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+a.svg{
+  position: relative;
+  display: inline-block;
+}*/
+
+}
 
 
 /* section1*/
@@ -201,6 +257,41 @@ button:hover{
   background-color: #DCD0C0;
 }
 
+/* section tablet*/
+
+@media only screen and (max-width: 760px){
+
+  #section1 .column1{
+    display: none;
+  }
+
+
+#section1.section {
+    background-image: url("/Users/tomloosmore/Desktop/Projects/Capstone/rescources/images/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0rem;
+
+}
+
+#section1 .column2{
+    background-color: #F4F4F4;
+    margin: 0rem;
+    width: 85%;
+    padding: 0rem 1rem 1rem 1.5rem;
+
+}
+
+#section1 button{
+ width: 30%;
+}
+
+}
 /* section2*/
 
 .container{
@@ -232,11 +323,26 @@ button:hover{
   font-style: italic;
   color: #DCD0C0;
   padding-top: 0.2rem;
+  display: inline-block;
 }
 
 .column1 a:hover,.column3 a:hover{
   color: #C0B283;
 }
+
+/* section2 tablet*/
+@media only screen and (max-width: 760px) {
+
+ .container-image {
+   display: none;
+ }
+
+ .container-text {
+   width: 100%;
+ }
+
+}
+
 /* section3*/
 
 #section3.section{
@@ -277,6 +383,18 @@ button:hover{
   margin-bottom: 0.5rem;
   color: #dcd0c0;
 }
+
+/* section3 tablet*/
+
+@media only screen and (max-width: 760px){
+
+.grid-box{
+  width: 50%;
+}
+
+}
+
+
 
 /* section4 */
 
