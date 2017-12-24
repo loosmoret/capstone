@@ -53,12 +53,14 @@ h1,h2,h3{
 P{
   color: #373737;
   line-height: 1.2em;
+  max-width: 100%;
 }
 
 h1 {
   font-size: 2rem;
   font-weight: bold;
   padding: 1rem 0rem;
+  max-width: 100%;
 }
 
 h2{
@@ -85,6 +87,7 @@ h3 {
   display: flex;
   width: 100%;
 }
+
 
 /* Header */
 
@@ -251,10 +254,15 @@ button{
   width: 50%;
   margin-top: 2rem;
   color: white;
+  border: none;
 }
 
 button:hover{
   background-color: #DCD0C0;
+}
+
+.column-mobile{
+  display: none;
 }
 
 /* section tablet*/
@@ -268,7 +276,6 @@ button:hover{
 
 #section1.section {
     background-image: url("/Users/tomloosmore/Desktop/Projects/Capstone/rescources/images/banner.jpg");
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 20rem;
@@ -292,12 +299,40 @@ button:hover{
 }
 
 }
+
+/* section mobile*/
+@media only screen and (max-width:450px) {
+
+#section1 .column2{
+  display: none;
+}
+
+#section1.section{
+  height: 10rem;
+}
+
+.column-mobile{
+  display: block;
+  padding: 1rem 0rem 2rem 1.5rem;
+  background-color: #F4F4F4;
+}
+
+.column-mobile p{
+  font-size: 1.5rem;
+}
+
+}
+
 /* section2*/
 
 .container{
   display: flex;
   padding: 1rem;
   border-top: 1px solid lightgrey;
+}
+
+.mobile-image{
+  display: none;
 }
 
 .container:hover {
@@ -340,6 +375,54 @@ button:hover{
  .container-text {
    width: 100%;
  }
+
+}
+
+/* section2 mobile*/
+
+@media only screen and (max-width:450px) {
+
+  #section2 .column1 {
+    display: none;
+  }
+
+  #section2 .column3{
+    width: 100%;
+  }
+
+  #section2 .container-image{
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  #section2.section{
+    padding-bottom: 0.5rem;
+  }
+
+    #section2 .container {
+      display: block;
+      padding: 0rem;
+      border-top: none;
+      margin-bottom: 1.5rem;
+    }
+
+    #section2 .container-text {
+      padding: 0rem 0rem 0.5rem 0.5rem;
+    }
+
+    .mobile-image {
+      display: block;
+      width: 100%;
+    }
+
+    .desktop-image {
+      display: none;
+    }
+
+  .container:hover{
+    background-color: white;
+  }
 
 }
 
@@ -394,6 +477,35 @@ button:hover{
 
 }
 
+/* section3 mobile*/
+
+
+@media only screen and (max-width:450px) {
+
+.box-image{
+  display: none;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+
+.box-text:hover > .dropdown-content{
+  display: block;
+}
+
+#section3 h3 {
+  padding: 0.5rem 0rem;
+}
+
+
+.grid-box {
+  width: 100%;
+}
+
+
+}
 
 
 /* section4 */
@@ -405,6 +517,22 @@ button:hover{
 #section4 h1{
   text-align: center;
   padding-bottom: 2rem;
+}
+
+/* section4 mobile*/
+
+
+@media only screen and (max-width:450px) {
+
+#section4 .column3{
+  display:none;
+}
+
+#section4 .column1{
+  width: 100%;
+  padding: 0rem;
+}
+
 }
 
 /* Footer */
@@ -434,3 +562,11 @@ footer{
 .terms a:hover{
     border-bottom: 1px solid white;
 }
+
+/* footer mobile*/
+
+@media only screen and (max-width:470px) {
+
+  .terms{
+    display: none;
+  }
